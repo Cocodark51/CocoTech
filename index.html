@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CocoTech</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">CocoTech</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#section">Services et Tarifs</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <img src="images/menu-btn.png" alt="menu" class="menu-hamburger">
+    </nav>
+    <div class="content">
+        <h1>Bienvenue sur CocoTech</h1>
+        <p>“Cookie : Anciennement petit gâteau sucré, qu’on acceptait avec plaisir. <br>Aujourd’hui : petit fichier informatique drôlement salé, qu’il faut refuser avec véhémence.”</p>
+        <div>
+            <a href="contact.html"><button type="button"><span></span>Prendre rendez-vous</button></a>
+        </div>
+    </div>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</header>
+
+<section class="services" id="section">
+    <div class="container">
+        <h1>Services et Tarifs</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Dépanage Informatique</h2>
+                <p>Si vous rencontrer des soucis informatiques qui ne peuvent pas être résolues à distance, nous interviendrons directement sur place pour pour diagnostiquer et résoudre le problème. Optez pour cette option lorsque le dépannage à distance n'est pas possible.</p>
+                <br>
+                <p class="prix">Prix: 20€/heure</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Assistance a distance</h2>
+                <p>Avec notre Assistance à Distance, résolvez vos problèmes informatiques sans déplacements. Optez pour cette option pour une assistance immédiate, peu importe où vous êtes. Cependant, si le problème s'avère complexe et qu'un diagnostic à distance n'est pas possible, nous vous recommandons d'opter pour notre service de dépannage en personne.</p>
+                <br>
+                <p class="prix">Prix: 10€/heure</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Option Montage PC (Sans Systeme d'exploitation !)</h2>
+                <p>Nous montons ta machine avec les composants qui te corresponde afin de d'obtenir un système parfaitement adapté à tes besoins. Seulement aucun systeme d'exploitation sera instalé. Tu devras donc l'installer par toi meme.</p>
+                <br>
+                <p class="prix">Prix: 50€</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Option Montage PC VIP + Installation Windows</h2>
+                <p>Ce service reprend l'Option de Montage PC mais avec des service supplementaire comme l'installation du systeme d'exploitation, les dernière mise a jours installés ou encore la mise a jour du bios... Le PC arrive chez toi, tu n'as plus qu'à le brancher et à le démarrer, il est prêt !</p>
+                <br>
+                <p class="prix">Prix: 70€</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Installation Windows et Mise a Jour BIOS</h2>
+                <p>Assurez-vous que votre système fonctionne à son potentiel maximum avec notre service d'installation de Windows et de mise à jour du BIOS.
+                    <br><br><small><i>*Attention pour certaines cartes mères exigeant du matériel très spécifique (processeur, alimentation, ram...), nous pouvons ne pas être en mesure de procéder à la mise à jour du bios</i></small>
+                </p>
+                <br>
+                <p class="prix">Prix: 20€</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Conseils et autres demandes</h2>
+                <p>Notre équipe de conseillers expérimentés est là pour vous guider dans toutes vos décisions informatiques. Que vous cherchiez des recommandations pour l'achat de nouveaux équipements, des conseils sur la sécurité en ligne ou des astuces pour optimiser les performances de votre ordinateur, nous sommes là pour répondre à toutes vos questions et vous fournir les informations nécessaires pour prendre des décisions éclairées.
+                    <br><br><small><i>*Tarif pouvant etre ajustés en fonction des demandes.</i></small>
+                </p>
+                <br>
+                <p class="prix">Prix: -- €</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Impression 3D</h2>
+                <p>Faites naître vos idées avec notre service d'impression 3D sur mesure. Des projets créatifs aux prototypes, nous transformons vos concepts en réalité. 
+                    <br><br><small><i>*Veuillez noter que les tarifs varient selon la taille, les matériaux et la complexité de l'impression, chaque demande étant évaluée individuellement. Contactez-nous pour concrétiser vos projets d'impression 3D de manière exceptionnelle.</i></small>
+                <br><br>
+                <p class="prix">Prix: -- €</p>
+                <br>
+                <a href="contact.html" class="contact-btn">Me Contacter</a>
+            </div>
+        </div>
+        </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3><strong>CocoTech</strong></h3>
+        <p><i>Située à Soudron (51320), l'entreprise est spécialisée dans le secteur d'activité de l'informatique.</i></p>
+    </div>
+    <div class="footer-bottom">
+        <p>copyright &copy;2023 COCOTECH. designed by Corentin_mrcx</p>
+    </div>
+</footer>
+</body>
+</html>

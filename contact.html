@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Contact</title>
+</head>
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">CocoTech</a>
+        <div class="nav-links">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html#section">Services et Tarifs</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <img src="images/menu-btn.png" alt="menu" class="menu-hamburger">
+    </nav>
+    <br><br><br><br><br>
+
+    <section class="contact-info">
+        <div class="info-box">
+            <h1>Nous Contacter : </h1>
+            <br>
+            <h2>Numéro de Téléphone :</h2>
+            <p>06 80 67 15 48</p>
+            <h2>Adresse E-mail :</h2>
+            <p>corentinmarcoux51@gmail.com</p>
+        </div>
+    </section>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</header>
+</html>
